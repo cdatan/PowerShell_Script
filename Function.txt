@@ -1,0 +1,11 @@
+function Get-Site
+{
+	$site=Read-Host "Choose a site code"
+	Switch ($site)
+	{
+		L {$Chosensite="London"}
+		H {$Chosensite="Hong Kong"}
+		N {$Chosensite="New York"}
+		}
+    return $Chosensite
+}

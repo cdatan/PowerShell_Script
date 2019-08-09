@@ -1,0 +1,20 @@
+# PowerShell If statement Simple Example
+
+$Hotel_Number = 10
+
+If ($Hotel_Number -gt 0) {Write-Host "need more customers"}
+
+else {Write-Host "you are in a negative"}
+
+
+function Get-Site
+{
+	$site=Read-Host "Choose a site code"
+	Switch ($site)
+	{
+		L {$Chosensite="London"}
+		H {$Chosensite="Hong Kong"}
+		N {$Chosensite="New York"}
+		}
+    return $Chosensite
+}

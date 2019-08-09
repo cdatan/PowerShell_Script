@@ -1,0 +1,16 @@
+$cost = Read-Host -Prompt 'How much does a computer cost'
+
+if($cost -gt 1000)
+{
+	Write-Host "It's too expensive."
+}
+
+if($cost -lt 1000)
+{
+	Write-Host "That's just about right."
+}
+
+if($cost -eq 1000)
+{
+	Write-Host "Is that a gaming computer?"
+}
