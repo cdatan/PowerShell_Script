@@ -19,6 +19,9 @@ else
 if($check -eq 'yes')
 {
 	Read-Host -prompt 'How many computers would you like to buy?'
+	
+	[int]$cost=([int]$computers+[int]$ExtraComputers)
+	
 	Write-Host "you can make something out of $cost computers total."
 
 }
